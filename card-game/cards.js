@@ -5,7 +5,7 @@ const tomato = addCard('tomato');
 const carrot = addCard('carrot');
 
 function addCard(crop) {
-    let cardSheetPath = 'images/' + crop + 'sheet.json';
+    let cardSheetPath = 'images/card/' + crop + 'sheet.json';
     PIXI.Assets.load(cardSheetPath).then(() => {
         const animation = PIXI.Assets.cache.get(cardSheetPath).data.animations;
         // create an animated sprite
